@@ -12,4 +12,4 @@ link_directories(/usr/local/huobi/)
 
 ADD_EXECUTABLE(algodemo ./algodemo.cpp)
 
-target_link_libraries(algodemo huobi curl ssl crypto cpprestsdk::cpprest z)
+target_link_libraries(algodemo huobi curl ssl crypto cpprest z)

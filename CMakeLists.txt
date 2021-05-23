@@ -24,6 +24,8 @@ AUX_SOURCE_DIRECTORY(./src/ DIR_SRCS)
 
 add_library(${PROJECT_NAME} STATIC ${DIR_SRCS} ${DIR_SRCS_CLIENT})
 
+add_subdirectory(demo)
+
 install(TARGETS ${PROJECT_NAME}
         LIBRARY DESTINATION huobi/
         ARCHIVE DESTINATION huobi/)
