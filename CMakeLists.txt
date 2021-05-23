@@ -23,7 +23,7 @@ AUX_SOURCE_DIRECTORY(./src/client DIR_SRCS_CLIENT)
 AUX_SOURCE_DIRECTORY(./src/ DIR_SRCS)
 
 add_library(${PROJECT_NAME} STATIC ${DIR_SRCS} ${DIR_SRCS_CLIENT})
-
+target_link_libraries(${PROJECT_NAME}  pthread curl ssl crypto cpprest z)
 add_subdirectory(demo)
 
 install(TARGETS ${PROJECT_NAME}
