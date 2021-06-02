@@ -12,4 +12,4 @@ link_directories(/usr/local/huobi/)
 
 ADD_EXECUTABLE(websocketMarketdemo ./websocketMarketdemo.cpp)
 
-target_link_libraries(websocketMarketdemo huobi curl ssl crypto cpprest z)
+target_link_libraries(websocketMarketdemo huobi curl ssl crypto cpprest z boost_system)

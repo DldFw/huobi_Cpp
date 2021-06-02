@@ -13,4 +13,4 @@ link_directories(/usr/local/huobi/)
 
 ADD_EXECUTABLE(crossmargindemo crossmargindemo.cpp)
 
-target_link_libraries(crossmargindemo huobi curl ssl crypto cpprest z)
+target_link_libraries(crossmargindemo huobi curl ssl crypto cpprest z boost_system)

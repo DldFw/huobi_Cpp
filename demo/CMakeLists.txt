@@ -3,7 +3,7 @@ project(demo LANGUAGES CXX)
 
 set(CMAKE_CXX_STANDARD 17)
 
-include_directories(/usr/local/huobi)
+include_directories(../include)
 
 add_subdirectory(account)
 add_subdirectory(crossmargin)
@@ -12,11 +12,11 @@ add_subdirectory(market)
 add_subdirectory(reference)
 add_subdirectory(trade)
 add_subdirectory(wallet)
-#add_subdirectory(websocketAsset)
+add_subdirectory(websocketAsset)
 #add_subdirectory(websocketMarket)
 #add_subdirectory(websocketOrders)
 
 #makefind_package(cpprestsdk REQUIRED)
 
-link_directories(/usr/local/lib/)
-link_directories(/usr/local/huobi/)
+#link_directories(/usr/local/lib/)
+link_directories(../bin)

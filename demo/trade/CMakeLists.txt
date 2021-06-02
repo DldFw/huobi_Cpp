@@ -12,4 +12,4 @@ link_directories(/usr/local/huobi/)
 
 ADD_EXECUTABLE(tradedemo ./tradedemo.cpp)
 
-target_link_libraries(tradedemo huobi curl ssl crypto cpprest z)
+target_link_libraries(tradedemo huobi curl ssl crypto cpprest z boost_system)

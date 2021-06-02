@@ -13,4 +13,4 @@ link_directories(/usr/local/huobi/)
 
 ADD_EXECUTABLE(websocketAssetdemo ./websocketAssetdemo.cpp)
 
-target_link_libraries(websocketAssetdemo huobi pthread m curl ssl crypto cpprest z)
+target_link_libraries(websocketAssetdemo huobi pthread m curl ssl crypto cpprest z boost_system)

@@ -13,4 +13,4 @@ link_directories(/usr/local/huobi/)
 
 ADD_EXECUTABLE(walletdemo ./walletdemo.cpp)
 
-target_link_libraries(walletdemo huobi curl ssl crypto cpprest z)
+target_link_libraries(walletdemo huobi curl ssl crypto cpprest z boost_system)

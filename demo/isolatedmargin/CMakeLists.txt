@@ -11,4 +11,4 @@ link_directories(/usr/local/huobi/)
 
 ADD_EXECUTABLE(isolatedmargindemo isolatedmargindemo.cpp)
 
-target_link_libraries(isolatedmargindemo huobi curl ssl crypto cpprest z)
+target_link_libraries(isolatedmargindemo huobi curl ssl crypto cpprest z boost_system)
